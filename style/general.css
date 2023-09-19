@@ -1,0 +1,289 @@
+body {
+  background: rgb(0, 0, 0);
+  padding-top: 50px;
+  font-family: Bebas Neue;
+}
+
+.me-info{
+  display: flex;
+  flex: 1fr 1fr;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.img-parent{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.my-pic{
+  width: 250px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Home{
+  padding-top: 176px;
+  padding-bottom: 176px;
+  display: flex;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-image: url('/img/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  flex-shrink: 0
+}
+
+.my-info{
+  font-size: 200%;
+  line-height: 40px;
+  margin-left: 15px;
+  color: white;
+}
+
+.my-info p{
+  margin: 0;
+}
+
+.stars {
+  width: 200%;
+  height: 100%;
+  background-image: url('/img/Stars.png');
+  background-size: cover;
+  position: absolute;
+  top: 0; /* Initial position from the top */
+    left: 0; /* Initial position from the left */
+    animation: moveImage 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes moveImage {
+  0% {
+      left: -200%;
+  }
+  100% {
+      left: 100%; /* Move to the right */
+  }
+}
+
+.acerca-de-mi,
+.skills-tree,
+.contacto{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  position: relative;
+  top: 700px;
+}
+
+.about-me{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  border-radius: 3px;
+  margin-bottom: 70px;
+  font-size: 150%;
+}
+
+.about-me p{
+  margin: 0;
+}
+
+.tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-tree{
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 280px;
+}
+
+.acercaDe-title,
+.skills-tree-title,
+.contacto-title{
+  font-size: 200%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  padding: 3px;
+  margin-top: 60px;
+}
+
+.skills-tree-title{
+  margin-bottom: 80px;
+}
+
+.attribute,
+.attribute-idiomas,
+.attribute-idioma,
+.attribute-story,
+.attribute-frontend,
+.attribute-programacion,
+.attribute-game,
+.attribute-visual,
+.attribute-video,
+.attribute-community{
+  border-style: solid;
+  border-radius: 10%;
+  margin-bottom: 50px;
+  text-align: center;
+  margin: 20px;
+}
+
+.attribute img,
+.attribute-idiomas img,
+.attribute-idioma img,
+.attribute-story img,
+.attribute-frontend img,
+.attribute-programacion img,
+.attribute-game img,
+.attribute-visual img,
+.attribute-video img,
+.attribute-community img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.main-skills-row{
+  display: flex;
+  align-items: center;
+}
+
+.main-skills-row .attribute,
+.main-skills-row .attribute-idiomas,
+.main-skills-row .attribute-idioma,
+.main-skills-row .attribute-story,
+.main-skills-row .attribute-frontend,
+.main-skills-row .attribute-programacion,
+.main-skills-row .attribute-game,
+.main-skills-row .attribute-visual,
+.main-skills-row .attribute-video,
+.main-skills-row .attribute-community{
+  flex: 1;
+  margin-right: 25px;
+  margin-left: 25px;
+  padding: 2px;
+  border-width: 2px;
+  border-color: rgb(215, 171, 97);
+  background-color: rgb(215, 171, 97);
+}
+
+.main-skills-row .attribute img,
+.main-skills-row .attribute-idiomas img,
+.main-skills-row .attribute-idioma img,
+.main-skills-row .attribute-story img,
+.main-skills-row .attribute-frontend img,
+.main-skills-row .attribute-programacion img,
+.main-skills-row .attribute-game img,
+.main-skills-row .attribute-visual img,
+.main-skills-row .attribute-video img,
+.main-skills-row .attribute-community img{
+  width: 110px;
+}
+
+#secondary-bloqueado img,
+#secondary-desbloqueado img{
+  width: 60px;
+}
+
+#secondary-bloqueado{
+  height: 100%;
+  padding: 3px;
+  border-color: rgb(171, 171, 171);
+  background-color: rgb(171, 171, 171);
+}
+
+#secondary-desbloqueado{
+  height: 100%;
+  padding: 3px;
+  border-color: rgb(215, 171, 97);
+  background-color: rgb(215, 171, 97);
+}
+
+.branch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto{
+  margin-top: 0px;
+  background-color: white;
+  color: black;
+  padding: 0 8px 6px 8px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto p {
+  margin-top: 10px;
+}
+
+.contacto-title{
+  border: none;
+}
+
+.tooltip{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: inherit;
+  border-color: inherit;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  opacity: 0;
+  margin-top: 15px;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.attribute-idiomas:hover .tooltip,
+.attribute-idioma:hover .tooltip,
+.attribute-story:hover .tooltip,
+.attribute-frontend:hover .tooltip,
+.attribute-programacion:hover .tooltip,
+.attribute-game:hover .tooltip,
+.attribute-visual:hover .tooltip,
+.attribute-video:hover .tooltip,
+.attribute-community:hover .tooltip{
+  opacity: 1;
+}

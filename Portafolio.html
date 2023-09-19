@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mauricio Di Donato Sánchez</title>
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow&family=Roboto:wght@400;700&family=Teko:wght@400;600&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="bars-container">
+        <img class="bars-1" src="svgs/Bars.png" />
+        <img class="bars-2" src="svgs/Bars-2.png" alt="" />
+      </div>
+      <div class="buttons">
+        <button class="hogar-button" onclick="scrollea('Home')">Hogar</button>
+        <button class="acerca-de-button" onclick="scrollea('Acerca-de-mi')">
+          Acerca de
+        </button>
+        <button class="skills-button" onclick="scrollea('Skills')">
+          Skill-Tree
+        </button>
+        
+        <button class="contact-button" onclick="scrollea('Contacto')">
+          Contacto
+        </button>
+      </div>
+    </section>
+    <main>
+      <section class="Home" id="Home">
+        <div>
+          <img class="my-pic" src="img/Profile-pic.jpeg" />
+        </div>
+        <div class="my-info">
+          <p style="font-size: 50px; font-weight: bold">
+            Hola, me llamo Mauricio!
+          </p>
+          <p style="font-size: 29px; margin-top: 4px">
+            soy
+            <a style="color: rgb(110, 126, 191); font-weight: bold"
+              >Developer</a
+            >
+            en entrenamiento con
+          </p>
+          <p style="margin-top: 0">
+            <a style="color: rgb(200, 35, 55)">Java </a> &nbsp
+            <a style="color: rgb(224, 98, 54)"> C++ </a> &nbsp
+            <a style="color: rgb(215, 171, 97)"> JS-HTML-CSS </a>
+          </p>
+        </div>
+        <img class="stars" src="img/Stars.png" />
+      </section>
+      <section class="acerca-de-mi" id="Acerca-de-mi">
+        <p class="acercaDe-title">Acerca de mí</p>
+        <div class="about-me">
+          <p>
+            Hola!, me llamo
+            <a style="color: rgb(110, 126, 191)">Mauricio Di Donato Sánchez</a>
+            y soy un estudiante de ingeniería en sistemas. <br /><br />
+            Pienso que las mejores aplicaciones siempre deben ir con una buena
+            interfaz. <br />
+            <br />
+            Me especializo en
+            <a style="color: rgb(224, 98, 54)">la Programación con JAVA</a>.
+            <br /><br />
+            Actualmente estoy aprendiendo más cosas sobre
+            <a style="color: rgb(215, 171, 97)">la Programación WEB</a>.
+            <br />
+            <br />Chequea mi skill-tree aquí abajo 👇
+          </p>
+        </div>
+      </section>
+      <section class="skills-tree" id="Skills">
+        <p class="skills-tree-title">SKILL TREE</p>
+        <div class="tree-container">
+          <div class="main-skills-row">
+            <div class="attribute-community" id="secondary-bloqueado">
+              <img src="svgs/Community.png" alt="Community Icon" />
+              <div class="tooltip">
+                <a style="color: rgb(171, 171, 171)"
+                  >Conexión social en línea</a
+                >
+                <br />
+                Habilidad para crear relaciones y fomentar <br />
+                participación en una comunidad digital<br /><u
+                  style="color: rgb(171, 171, 171)"
+                  >Bloqueado</u
+                >
+              </div>
+            </div>
+
+            <div class="branch">
+              <div
+                style="opacity: 0"
+                class="attribute"
+                id="secondary-bloqueado">
+                <img src="svgs/Idioma.png" alt="Language Icon" />
+              </div>
+              <div class="attribute-video">
+                <img src="svgs/Video making.png" alt="Video Making Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(215, 171, 97)">Creación de Contenido</a>
+                  <br />producción de videos y diseños visuales
+                  <br />cautivadores para compartir ideas y <br />perspectivas
+                  con una audiencia<br /><u style="color: rgb(215, 171, 97)"
+                    >Desbloqueado</u
+                  >
+                </div>
+              </div>
+              <div class="attribute-visual" id="secondary-desbloqueado">
+                <img src="svgs/Visual.png" alt="Visual Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(215, 171, 97)"
+                    >Creatividad audiovisual</a
+                  >
+                  <br />Habilidad para convertir conceptos en <br />
+                  videos o diseños visuales atractivos<br /><u
+                    style="color: rgb(215, 171, 97)"
+                    >Desbloqueado</u
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="branch">
+              <div class="attribute-game" id="secondary-bloqueado">
+                <img src="svgs/game.png" alt="Game Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(171, 171, 171)">Desarrollo de juegos</a>
+                  <br />Habilidad para programar, escribir <br />y publicar un
+                  videojuego<br /><u style="color: rgb(171, 171, 171)"
+                    >Bloqueado</u
+                  >
+                </div>
+              </div>
+              <div class="attribute-programacion">
+                <img src="svgs/Programacion.png" alt="Programming Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(215, 171, 97)">Desarrollo Backend</a>
+                  <br />Manejo de la parte logica de una aplicación o sitio web
+                  <br />(Nivel Junior, Java y c++)<br /><u
+                    style="color: rgb(215, 171, 97)"
+                    >Desbloqueado</u
+                  >
+                </div>
+              </div>
+              <div class="attribute-frontend" id="secondary-bloqueado">
+                <img src="svgs/Frontend.png" alt="Frontend Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(171, 171, 171)">Desarrollo Frontend</a>
+                  <br />Manejo de la presentación visual y de la <br />
+                  interacción de una aplicación o sitio web<br /><u
+                    style="color: rgb(171, 171, 171)"
+                    >Bloqueado</u
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="branch">
+              <div class="attribute-story" id="secondary-bloqueado">
+                <img src="svgs/Question-mark.png" />
+                <div class="tooltip">
+                  <a style="color: rgb(171, 171, 171)">???</a> <br />...<br /><u
+                    style="color: rgb(171, 171, 171)"
+                    >Bloqueado</u
+                  >
+                </div>
+              </div>
+
+              <div class="attribute-idiomas">
+                <img src="svgs/Idiomas.png" alt="Languages Icon" />
+                <div class="tooltip">
+                  <a style="color: rgb(215, 171, 97)">BILINGüE</a> <br />Dominio
+                  de inglés y español <br /><u style="color: rgb(215, 171, 97)"
+                    >Desbloqueado</u
+                  >
+                </div>
+              </div>
+              <div
+                style="opacity: 0"
+                class="attribute"
+                id="secondary-bloqueado">
+                <img src="svgs/Idioma.png" alt="Language Icon" />
+              </div>
+            </div>
+            <div class="attribute-idioma" id="secondary-bloqueado">
+              <img src="svgs/Idioma.png" alt="Language Icon" />
+              <div class="tooltip">
+                <a style="color: rgb(171, 171, 171)">TRILINGüE</a> <br />Dominio
+                del Italiano <br /><u style="color: rgb(171, 171, 171)"
+                  >Bloqueado</u
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="Contacto">
+        <div class="contacto-title-container">
+          <p class="contacto-title">Contacto</p>
+        </div>
+        <p style="margin-top: 0">
+          Sígueme en
+          <a
+            style="color: rgb(110, 126, 191); text-decoration: none"
+            href="https://github.com/MauricioDDS"
+            >Github</a
+          >!
+        </p>
+      </section>
+    </main>
+    <script>
+
+      function scrollea(sectionId){
+        const section = document.getElementById(sectionId);
+
+        if(section){
+          section.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+      }
+    </script>
+  </body>
+</html>
